@@ -9,7 +9,7 @@ if (
   }
 
 export default function({ title, children }) {
-    const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(false);
   
   return (
     <View>
@@ -24,7 +24,7 @@ export default function({ title, children }) {
                                 borderBottomRightRadius: (!expanded ? 5 : 0) }} >
                     <Text style={styles.title}>{title}</Text>
                     
-                    <Text style={styles.toggleIcon}/>{expanded ? '+' : '-'}</Text>
+                    <Text style={styles.toggleIcon}/>{expanded ? '═' : '╪'}</Text>
                 </View>
             </TouchableWithoutFeedback>
         </View>
