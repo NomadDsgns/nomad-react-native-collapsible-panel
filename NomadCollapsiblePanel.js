@@ -24,7 +24,7 @@ export default function({ title, children }) {
                                 borderBottomRightRadius: (!expanded ? 5 : 0) }} >
                     <Text style={styles.title}>{title}</Text>
                     
-                    <Text style={styles.toggleIcon}/>{expanded ? '═' : '╪'}</Text>
+                    <Text style={styles.toggleIcon}>{expanded ? '═' : '╪'}</Text>
                 </View>
             </TouchableWithoutFeedback>
         </View>
@@ -44,10 +44,12 @@ const styles = StyleSheet.create({
         marginLeft: 5,
         marginRight: 5,
         marginTop: 10,
-        padding: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
         alignItems: "center",
         borderTopLeftRadius: 5,
         borderTopRightRadius: 5,
+        backgroundColor: "#e0e0e0"
     },
     title: {
         fontWeight: '700'
@@ -68,5 +70,6 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         borderBottomLeftRadius: 5,
         borderBottomRightRadius: 5,
+        backgroundColor: "#f2f7f4"
     }
 });
